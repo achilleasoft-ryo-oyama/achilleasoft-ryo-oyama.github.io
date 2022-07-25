@@ -11,9 +11,14 @@
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
+  "profile": "https://achilleasoft-ryo-oyama.github.io/achilleasoft-ryo-oyama.github.io/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "rm": "rm -rf docs",
+    "mv": "mv build docs",
+    "git": "git add . && git commit && git push origin main",
+    "deploy": "npm run rm && npm run build && npm run mv && npm run git",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -34,5 +39,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "volta": {
+    "node": "16.16.0"
   }
 }
