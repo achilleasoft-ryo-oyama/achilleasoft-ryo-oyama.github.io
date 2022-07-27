@@ -11,6 +11,7 @@
 # production
 /build
 
+# cacheの削除
 /profile/node_modules/*
 
 # misc
