@@ -19,7 +19,7 @@ const BaseInfo = () => {
 			<Flex marginTop={5} h={"auto"} justifyContent="center" align={"center"}>
 				<Box>
 					<Image
-						boxSize={{ base: "150px", md: "180px", lg: "200px" }}
+						boxSize={{ base: "120px", md: "160px", lg: "200px" }}
 						borderRadius="full"
 						objectFit="cover"
 						src={myPhoto}
