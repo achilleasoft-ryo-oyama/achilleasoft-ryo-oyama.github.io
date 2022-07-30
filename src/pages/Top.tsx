@@ -19,7 +19,7 @@ const BaseInfo = () => {
 			<Flex marginTop={5} h={"auto"} justifyContent="center" align={"center"}>
 				<Box>
 					<Image
-						boxSize={{ base: "120px", md: "160px", lg: "200px" }}
+						boxSize={{ base: "100px", md: "150px", lg: "200px" }}
 						borderRadius="full"
 						objectFit="cover"
 						src={myPhoto}
@@ -27,7 +27,7 @@ const BaseInfo = () => {
 					/>
 				</Box>
 				<Box marginInlineStart={5}>
-					<Text fontSize={{ base: "xl", md: "2xl", lg: "3xl" }}>
+					<Text fontSize={{ base: "lg", md: "2xl", lg: "3xl" }}>
 						大山　亮（Ryo Oyama）
 					</Text>
 					<Text fontSize={{ base: "md", md: "xl", lg: "2xl" }}>
