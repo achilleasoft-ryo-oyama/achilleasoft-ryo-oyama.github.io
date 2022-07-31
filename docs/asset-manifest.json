@@ -1,16 +1,20 @@
 {
   "files": {
     "main.css": "/static/css/main.e6c13ad2.css",
-    "main.js": "/static/js/main.783ea9ea.js",
+    "main.js": "/static/js/main.a2243e6e.js",
     "static/js/787.295487ce.chunk.js": "/static/js/787.295487ce.chunk.js",
+    "static/media/KaiseiTokumin-Regular.ttf": "/static/media/KaiseiTokumin-Regular.a931c0b1704ff5a9e05c.ttf",
+    "static/media/KaiseiTokumin-ExtraBold.ttf": "/static/media/KaiseiTokumin-ExtraBold.15c2f0243ca74cf63b2f.ttf",
+    "static/media/KaiseiTokumin-Medium.ttf": "/static/media/KaiseiTokumin-Medium.b8d34c30d14bdc77e901.ttf",
+    "static/media/KaiseiTokumin-Bold.ttf": "/static/media/KaiseiTokumin-Bold.4d913689435b67e711c8.ttf",
     "static/media/my_photo.jpeg": "/static/media/my_photo.1fb64266a15bf467a601.jpeg",
     "index.html": "/index.html",
     "main.e6c13ad2.css.map": "/static/css/main.e6c13ad2.css.map",
-    "main.783ea9ea.js.map": "/static/js/main.783ea9ea.js.map",
+    "main.a2243e6e.js.map": "/static/js/main.a2243e6e.js.map",
     "787.295487ce.chunk.js.map": "/static/js/787.295487ce.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.783ea9ea.js"
+    "static/js/main.a2243e6e.js"
   ]
 }
