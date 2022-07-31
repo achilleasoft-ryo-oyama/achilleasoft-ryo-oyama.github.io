@@ -27,7 +27,10 @@ const BaseInfo = () => {
 					templateRows={{ md: "1fr", sm: "repeat(2, 1fr)" }}
 					gap={2}
 				>
-					<GridItem justifyItems={{ md: "end", sm: "center" }} display="grid">
+					<GridItem
+						justifyItems={{ base: "center", md: "end", lg: "end" }}
+						display="grid"
+					>
 						<Image
 							boxSize={{ base: "150px", md: "175px", lg: "200px" }}
 							borderRadius="full"
@@ -36,11 +39,14 @@ const BaseInfo = () => {
 							alt="ryo_oyama_image"
 						/>
 					</GridItem>
-					<GridItem justifyItems={{ md: "start", sm: "center" }} display="grid">
+					<GridItem
+						justifyItems={{ base: "center", md: "start", lg: "start" }}
+						display="grid"
+					>
 						<Flex
-							marginStart={{ md: "5", sm: "0" }}
+							marginStart={{ base: "0", md: "5", lg: "5" }}
 							h={"auto"}
-							justifyContent={{ md: "center", sm: "center" }}
+							justifyContent={"center"}
 							align={{ md: "start", sm: "center" }}
 							flexFlow="column"
 						>
