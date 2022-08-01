@@ -1,16 +1,19 @@
 import React from "react";
 import { Box, Flex, Grid, GridItem, Image, Text } from "@chakra-ui/react";
-import { SkillContentLine, SKILL_CONTENTS } from "../assets/SkillData";
+import { HEADLINE_TITLES } from "../assets/HeadlineTitles";
+import { SKILL_CONTENTS } from "../assets/SkillData";
+import { headlineTitle } from "../components/headlineTitle";
+import { skillContentsArea } from "../components/skillContentsArea";
 
 const Top = () => {
-	const HEADLINE_TITLE: string = "技術スタック";
 	return (
 		<html>
 			<head></head>
 			<body>
-				{baseInfo()} {headlineTitle(HEADLINE_TITLE)}{" "}
-				{contentsData(SKILL_CONTENTS[0])}
-				{contentsData(SKILL_CONTENTS[1])}
+				{baseInfo()} {headlineTitle(HEADLINE_TITLES[0])}
+				{skillContentsArea(SKILL_CONTENTS[0])}
+				{skillContentsArea(SKILL_CONTENTS[1])}
+				{skillContentsArea(SKILL_CONTENTS[2])}
 			</body>
 		</html>
 	);
@@ -67,69 +70,6 @@ const baseInfo = () => {
 				</Grid>
 			</Flex>
 		</Box>
-	);
-};
-
-const headlineTitle = (title: string) => {
-	return (
-		<Grid
-			templateColumns={{ md: "repeat(3, 1fr)", sm: "1fr" }}
-			templateRows={{ md: "1fr", sm: "repeat(3, 1fr)" }}
-			gap={3}
-			marginX="50px"
-			marginY="30px"
-		>
-			<GridItem
-				justifyItems={{ base: "center", md: "end" }}
-				alignSelf="center"
-				display="grid"
-				h={"3px"}
-				backgroundColor="#91B2F2"
-			/>
-			<GridItem justifyItems={"center"} display="grid">
-				<Text fontSize={{ base: "xl", md: "2xl", lg: "3xl" }}>{title}</Text>
-			</GridItem>
-			<GridItem
-				justifyItems={{ base: "center", md: "start" }}
-				alignSelf="center"
-				display="grid"
-				h={"3px"}
-				backgroundColor="#91B2F2"
-			/>
-		</Grid>
-	);
-};
-
-const contentsData = (contents: SkillContentLine) => {
-	return (
-		<Flex
-			justifyContent={"center"}
-			marginStart={{ base: "0%", md: "10%", lg: "10%" }}
-			marginEnd={{ base: "0%", md: "10%", lg: "10%" }}
-		>
-			<Grid
-				templateColumns={{ md: "repeat(3, 1fr)", sm: "1fr" }}
-				templateRows={{ md: "1fr", sm: "repeat(3, 1fr)" }}
-				gap={4}
-				marginTop="10px"
-			>
-				<GridItem w={{ base: "200px", md: "250px", lg: "300px" }}>
-					<Text fontSize={{ base: "md", md: "lg", lg: "xl" }}>
-						{contents.firstContent}
-					</Text>
-				</GridItem>
-				<GridItem w={{ base: "200px", md: "250px", lg: "300px" }}>
-					<Text fontSize={{ base: "md", md: "lg", lg: "xl" }}>
-						{contents.secondContent}
-					</Text>
-				</GridItem>
-				<GridItem w={{ base: "200px", md: "250px", lg: "300px" }}>
-					<Text fontSize={{ base: "md", md: "lg", lg: "xl" }}>
-						{contents.thirdContent}
-					</Text>
-				</GridItem>
-			</Grid>
-		</Flex>
 	);
 };
 

@@ -15,4 +15,9 @@ export const SKILL_CONTENTS: SkillContentLine[] = [
 		secondContent: "アプリエンジニア",
 		thirdContent: "フロントエンジニア",
 	},
+	{
+		firstContent: "バックエンジニア",
+		secondContent: "サーバエンジニア",
+		thirdContent: "採用活動",
+	},
 ];
