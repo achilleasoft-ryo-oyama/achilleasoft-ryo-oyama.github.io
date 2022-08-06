@@ -1,21 +1,22 @@
 import React from "react";
 import { Box, Flex, Grid, GridItem, Image, Text } from "@chakra-ui/react";
 import { HEADLINE_TITLES } from "../assets/HeadlineTitles";
-import { SKILL_CONTENTS } from "../assets/SkillData";
+import { POSITION_CONTENTS } from "../assets/PositionContensts";
+import { Language_CONTENTS } from "../assets/LanguageContents";
+import { Library_CONTENTS } from "../assets/LibraryContents";
 import { headlineTitle } from "../components/headlineTitle";
-import { skillContentsArea } from "../components/skillContentsArea";
+import { contentsArea } from "../components/contentsArea";
 
 const Top = () => {
 	return (
-		<html>
-			<head></head>
-			<body>
-				{baseInfo()} {headlineTitle(HEADLINE_TITLES[0])}
-				{skillContentsArea(SKILL_CONTENTS[0])}
-				{skillContentsArea(SKILL_CONTENTS[1])}
-				{skillContentsArea(SKILL_CONTENTS[2])}
-			</body>
-		</html>
+		<Box>
+			{baseInfo()} {headlineTitle(HEADLINE_TITLES[0])}
+			{contentsArea(POSITION_CONTENTS)}
+			{headlineTitle(HEADLINE_TITLES[1])}
+			{contentsArea(Language_CONTENTS)}
+			{headlineTitle(HEADLINE_TITLES[2])}
+			{contentsArea(Library_CONTENTS)}
+		</Box>
 	);
 };
 
